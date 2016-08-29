@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Unna" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
     <title>Style Guide</title>
   </head>
   <body>
     <header>
       <h1>Style Guide</h1>
-      <nav>
+      <nav class="page-nav">
         <ul>
           <li>One</li>
           <li>Two</li>
@@ -36,10 +35,23 @@
       <h2 class="week-title">Week One</h2>
       <h3>Primary Navigation Bar</h3>
       <article class="element one">
-
+        <header class="main-header">
+          <a class="logo" href="#"><img src="cupcake.png" alt="Cupcake"/></a>
+          <ul class="main-nav">
+            <li class="dropdown">
+              <a href="#">Menu</a>
+              <ul class="drop-nav">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </header>
       </article>
       <article class="description one">
-
+        <p>This is a responsive navigation bar that displays a drop down menu of links on mobile but a traditional nav style on larger screens.</p>
       </article>
       <article class="code one">
 

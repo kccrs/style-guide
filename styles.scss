@@ -1,7 +1,146 @@
+$main-header-color: #2BBBB3;
+$header-complement: complement($main-header-color);
+$nav-color: #2c3e50;
+$a-color: #fff;
+$nav-border: rgba(255,255,255,.2);
+$page-header-color: #333;
+$page-title-color: #FF358B;
+$page-nav-color: #01B0F0;
+$body-font: 'Josefin Sans', sans-serif;
+$header-font: 'Josefin Slab', serif;
+
 html {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+header {
+  background-color: $page-header-color;
+  font-family: $header-font;
+  height: 20vh;
+}
+
+h1 {
+  color: $page-title-color;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  padding: 30px 0 0 20px;
+  width: 60%;
+}
+
+.page-nav {
+  color: $page-nav-color;
+  // display: flex;
+  // float: right;
+  // justify-content: center;
+  margin-top: 20px;
+  width: 90%;
+}
+
+header nav li {
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 20px;
+  // margin: 20px;
+}
+
+
+.main-header {
+	background: $main-header-color;
+  border-radius: 5px;
+  border: 2px solid $header-complement;
+  margin: 20px auto;
+  min-height: 90px;
+  padding: 1em 2em;
+  width: 90%;
+}
+  // .main-header:after {
+  //   content: " ";
+  //   display: table;
+  //   clear: both;
+  // }
+
+// .logo {
+//   float: left;
+//   margin-top: 5px;
+// }
+
+img {
+  max-width: 60px;
+}
+
+//   .logo::before {
+//     color: $a-color;
+//     content: "\e001";
+//     font-weight: normal;
+//     font-style: normal;
+//     font-size: 2.5em;
+//     font-family: "icomoon";
+//     -webkit-font-smoothing: antialiased;
+//   }
+
+
+.main-nav,
+.drop-nav {
+  background: $nav-color;
+}
+
+.main-nav {
+  float: right;
+  border-radius: 4px;
+  margin-top: 15px;
+  border: solid 1px $header-complement;
+}
+
+  .main-nav > li {
+    float: left;
+    border-left: solid 1px $nav-border;
+  }
+
+  .main-nav li:first-child {
+    border-left: none;
+  }
+
+  .main-nav a {
+    color: $a-color;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+  }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:after {
+  color: $a-color;
+  content: "\25BE";
+  font-size: .5em;
+  display: block;
+  position: absolute;
+  top: 38%;
+  right: 12%;
+}
+
+.drop-nav {
+  position: absolute;
+  display: none;
+}
+
+.drop-nav li {
+  border-bottom: 1px solid $nav-border;
+}
+
+.drop-nav li:first-child {
+  border-top: 1px solid $nav-border;
+
+}
+
+.dropdown:hover > .drop-nav {
+  display: block;
 }
