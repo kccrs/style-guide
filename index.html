@@ -35,51 +35,24 @@
       <h2 class="week-title">Week One</h2>
       <h3>Primary Navigation Bar</h3>
       <article class="element one">
-
-      <header class="main-header">
-        <div id="logo" class="menuUp">
-          <h1>
-            <a class="logo" href="#"><img src="cupcake.png" alt="Cupcake"/></a>
-          </h1>
-          <div id="navToggle"><a href="#">Menu</a></div>
-       </div>
-        <nav>
-    		  <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a>
-              <a href="#">Blog <span class="toggle">Expand</span><span class="caret"></span></a>
-              <nav>
-                <ul>
-                  <li><a href="#">Articles</a></li>
-                  <li><a href="#">Tutorials</a></li>
-                  <li><a href="#">Humour</a></li>
-                  <li><a href="#">Gaming</a></li>
-                  <li><a href="#">Music</a></li>
-                </ul>
-              </nav>
-            </li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Help</a></li>
+        <header class="main-header">
+          <div id="logo" class="menuUp">
+            <h1 class="nav-title">
+              <a href="#"><img src="cupcake.png" alt="Cupcake"/></a>
+              <div id="navToggle">
+                <a class="menu" href="#">Menu</a></div>
+            </h1>
+         </div>
+          <nav class="main-nav">
+      		  <ul class="main-list">
+              <li class="main-list-item"><a href="#">Home</a></li>
+              <li class="main-list-item"><a href="#">About</a></li>
+              <li class="main-list-item"><a href="#">Blog</a></li>
+              <li class="main-list-item"><a href="#">Forum</a></li>
+              <li class="main-list-item"><a href="#">Help</a></li>
             </ul>
-      	</nav>
-      </header>
-
-        <!-- <header class="main-header">
-          <a class="logo" href="#"><img src="cupcake.png" alt="Cupcake"/></a>
-          <button class="sign-in">Sign In</button>
-          <ul class="main-nav">
-            <li class="dropdown">
-              <a href="#" class="menu">Menu</a>
-              <ul class="drop-nav">
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </header> -->
+        	</nav>
+        </header>
       </article>
       <article class="description one">
         <p>This is a responsive navigation bar that displays a drop down menu of links on mobile but a traditional navigation style on larger screens.</p>
@@ -88,7 +61,7 @@
 
       </article>
     </section>
-    <script src="jquery.js"></script>
-    <script src="scripts.js"></script>
+    <script src="./jquery.js"></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
