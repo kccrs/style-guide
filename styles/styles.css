@@ -171,17 +171,17 @@ h3 {
   font-weight: 300;
   text-transform: lowercase; }
 
-header > div#logo > div#navToggle {
+.main-header > div#logo > div#navToggle {
   background-color: rgba(0, 0, 0, 0.15);
   position: absolute;
   right: 0;
   top: 0;
   transition: 300ms all ease; }
 
-header > div#logo > div#navToggle:hover {
+.main-header > div#logo > div#navToggle:hover {
   background-color: rgba(0, 0, 0, 0.1); }
 
-header > div#logo > div#navToggle > a {
+.main-header > div#logo > div#navToggle > a {
   color: rgba(255, 255, 255, 0.85);
   display: block;
   font-size: 0.85em;
@@ -190,9 +190,58 @@ header > div#logo > div#navToggle > a {
   text-decoration: none;
   transition: 300ms all ease; }
 
-header > div#logo > div#navToggle:hover > a {
+.main-header > div#logo > div#navToggle:hover > a {
   color: white; }
 
+/* Medium screens */
+@media all and (min-width: 600px) {
+  .main-header > div#logo > div#navToggle {
+    display: none; }
+
+  .main-header nav > ul > li > a span.toggle {
+    display: none; }
+
+  .main-header nav > ul > li > a span.caret {
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid rgba(0, 0, 0, 0.65);
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-radius: 1px;
+    content: "";
+    display: inline-block;
+    height: 0;
+    margin: 0 0 0 .25rem;
+    transition: 250ms all ease;
+    width: 0;
+    vertical-align: middle; }
+
+  .main-header nav > ul > li:hover > a span.caret {
+    border-top-color: #8cc1c1;
+    transform: rotate(270deg); }
+
+  .main-header > nav {
+    background-color: transparent;
+    display: block; }
+
+  .main-header > nav > ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end; }
+
+  .main-header nav > ul > li {
+    border-bottom: none; }
+
+  .main-header nav > ul > li > a {
+    padding: 0 1.25rem; }
+
+  .main-header > nav > ul > li:hover > nav {
+    background-color: #333333;
+    border-radius: .25em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    display: block;
+    line-height: 3em;
+    right: -50%;
+    width: 196px; } }
 @media screen and (min-width: 650px) {
   h1 {
     font-size: 48px;
