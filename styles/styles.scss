@@ -45,17 +45,13 @@ h1 {
 h2 {
   color: $page-nav-color;
   font-family: $header-font;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
   letter-spacing: .05em;
   margin: 20px 0;
   text-align: center;
 }
 
-p {
-  margin: 20px auto;
-  width: 90%;
-}
 
 .week {
   border: 2px solid $page-header-color;
@@ -67,6 +63,16 @@ h3 {
   font-size: 20px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+p {
+  font-size: 20px;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.code a {
+  color: black;
 }
 
 @media screen and (min-width: 650px) {
