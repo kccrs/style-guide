@@ -1,6 +1,7 @@
 @import "_reset";
 @import "_variables";
 @import "_reusable-header";
+@import "_content-card";
 
 html {
   -moz-box-sizing: border-box;
@@ -10,6 +11,10 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+body p {
+  letter-spacing: 0.07em;
 }
 
 .page-header {
@@ -43,7 +48,7 @@ h1 {
 }
 
 h2 {
-  color: $page-nav-color;
+  color: darken($page-nav-color, 10);
   font-family: $header-font;
   font-size: 26px;
   font-weight: bold;
@@ -52,15 +57,13 @@ h2 {
   text-align: center;
 }
 
-
 .week {
   border: 2px solid $page-header-color;
-  margin: 20px;
   padding: 5px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 10px;
   text-align: center;
 }

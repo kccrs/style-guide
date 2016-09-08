@@ -164,6 +164,56 @@ img {
 
   .main-nav {
     margin-top: 5%; } }
+.content-card-container {
+  display: flex;
+  flex-direction: column; }
+
+.content-card {
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+  margin-top: 5vh;
+  overflow-y: hidden; }
+
+.content-card-title {
+  color: #3778bf;
+  font-size: 24px;
+  font-weight: bolder;
+  letter-spacing: .1em;
+  padding: 15px 0;
+  text-align: center; }
+
+.content-card-image {
+  display: inline-block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 80%; }
+
+.content-card-text {
+  font-size: 18px;
+  line-height: 1.2em;
+  margin: 10px auto;
+  padding: 5px; }
+
+.content-card-link {
+  border: 2px solid #3778bf;
+  color: #3778bf;
+  font-size: 16px;
+  font-weight: bolder;
+  height: 35px;
+  letter-spacing: 0.09em;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 50%; }
+  .content-card-link:hover {
+    background: #3778bf;
+    color: #d0e0f2; }
+
 html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -171,6 +221,9 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit; }
+
+body p {
+  letter-spacing: 0.07em; }
 
 .page-header {
   background-color: #333;
@@ -198,7 +251,7 @@ h1 {
     margin-left: 20px; }
 
 h2 {
-  color: #01B0F0;
+  color: #018bbd;
   font-family: "Josefin Slab", serif;
   font-size: 26px;
   font-weight: bold;
@@ -208,11 +261,10 @@ h2 {
 
 .week {
   border: 2px solid #333;
-  margin: 20px;
   padding: 5px; }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 10px;
   text-align: center; }
 
