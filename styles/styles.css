@@ -170,12 +170,16 @@ img {
 
 .content-card {
   background-color: rgba(0, 0, 0, 0.15);
-  border: 2px solid black;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   display: flex;
   flex-direction: column;
   height: 65vh;
-  margin-top: 5vh;
-  overflow-y: hidden; }
+  margin: 5vh auto;
+  width: 300px; }
+
+.content-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .content-card-title {
   color: #3778bf;
@@ -195,7 +199,7 @@ img {
   font-size: 18px;
   line-height: 1.2em;
   margin: 10px auto;
-  padding: 5px; }
+  padding: 2% 5%; }
 
 .content-card-link {
   border: 2px solid #3778bf;
@@ -215,6 +219,18 @@ img {
     background-color: #3778bf;
     color: #d0e0f2; }
 
+@media screen and (min-width: 450px) {
+  .content-card {
+    height: 70vh; }
+
+  .content-card-link {
+    margin-top: 20px; } }
+@media screen and (min-width: 600px) {
+  .content-card-container {
+    flex-flow: row wrap; }
+
+  .content-card {
+    max-width: 50vw; } }
 html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -262,6 +278,8 @@ h2 {
 
 .week {
   border: 2px solid #333;
+  margin-left: 5px;
+  margin-right: 5px;
   padding: 5px; }
 
 h3 {

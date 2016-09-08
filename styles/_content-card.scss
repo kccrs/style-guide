@@ -5,12 +5,18 @@
 
 .content-card {
   background-color: $nav-border;
-  border: 2px solid black;
+  // border: 2px solid black;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   display: flex;
   flex-direction: column;
   height: 65vh;
-  margin-top: 5vh;
-  overflow-y: hidden;
+  margin: 5vh auto;
+  // overflow-y: hidden;
+  width: 300px;
+}
+.content-card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .content-card-title {
@@ -33,7 +39,8 @@
   font-size: 18px;
   line-height: 1.2em;
   margin: 10px auto;
-  padding: 5px;
+  padding: 2% 5%;
+  // padding: 5px;
 }
 
 .content-card-link {
@@ -54,5 +61,40 @@
   &:hover {
     background-color: $content-card-primary;
     color: $content-card-button-hover;
+  }
+}
+
+@media screen and (min-width: 450px) {
+
+  .content-card {
+    height: 70vh;
+    // margin-left: 5%;
+    // margin-right: 5%;
+  }
+
+  .content-card-text {
+
+  }
+
+  .content-card-link {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+
+  .content-card {
+    // height: 75vh;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .content-card-container {
+    flex-flow: row wrap;
+  }
+
+  .content-card {
+    max-width: 50vw;
   }
 }
