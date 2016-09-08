@@ -48,10 +48,11 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  transition: background-color 0.7s ease,
+              color 0.7s ease;
   width: 50%;
   &:hover {
-    background: $content-card-primary;
+    background-color: $content-card-primary;
     color: $content-card-button-hover;
-
   }
 }

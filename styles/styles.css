@@ -209,9 +209,10 @@ img {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  transition: background-color 0.7s ease, color 0.7s ease;
   width: 50%; }
   .content-card-link:hover {
-    background: #3778bf;
+    background-color: #3778bf;
     color: #d0e0f2; }
 
 html {
