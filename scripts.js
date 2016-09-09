@@ -34,12 +34,13 @@ $(document).ready(function() {
 
 // CODE BELOW IS FOR ACCORDION TABS
 
+
 $(".tab-content").hide();
 $(".tab-content:first").show();
 
-$(".tab").click(function() {
-  debugger;
-	$(".tab").removeClass("active");
+$(".tabs li").click(function() {
+  // debugger;
+	$(".tabs li").removeClass("active");
 	$(this).addClass("active");
 	$(".tab-content").hide();
 	var activeTab = $(this).attr("rel");

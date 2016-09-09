@@ -234,6 +234,8 @@ img {
   .content-card {
     max-width: 50vw; } }
 .tabs {
+  margin: 0;
+  padding: 0;
   float: left;
   list-style: none;
   height: 32px;
@@ -241,8 +243,10 @@ img {
   border-left: 1px solid #999999;
   width: 100%; }
 
-.tab {
+.tabs li {
   float: left;
+  margin: 0;
+  cursor: pointer;
   padding: 0px 21px;
   height: 31px;
   line-height: 31px;
@@ -252,11 +256,12 @@ img {
   background: #EEEEEE;
   overflow: hidden;
   position: relative; }
-  .tab:hover {
+  .tabs li:hover {
     background: #CCCCCC; }
-  .tab.active {
-    background: #FFFFFF;
-    border-bottom: 1px solid #FFFFFF; }
+
+.tabs li.active {
+  background: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF; }
 
 .tab-container {
   border: 1px solid #999999;
