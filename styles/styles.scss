@@ -2,6 +2,7 @@
 @import "_variables";
 @import "_reusable-header";
 @import "_content-card";
+@import "_accordion-tab";
 
 html {
   -moz-box-sizing: border-box;
@@ -58,22 +59,28 @@ h2 {
 }
 
 .week {
-  border: 2px solid $page-header-color;
-  margin-left: 5px;
-  margin-right: 5px;
+  // border: 2px solid $page-header-color;
+  min-height: 100vh;
+  margin: 40px 5px 0;
   padding: 5px;
 }
 
 h3 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 p {
-  font-size: 20px;
+  font-size: 24px;
   margin: 20px auto;
-  width: 90%;
+}
+
+.main-about,
+.description {
+  margin-top: 30px;
+  padding-top: 20px;
+  width: 75%;
 }
 
 .code a {

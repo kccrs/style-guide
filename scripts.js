@@ -1,5 +1,7 @@
 var $ = jQuery.noConflict();
 
+// CODE BELOW IS FOR DROP DOWN MENU
+
 $(document).ready(function() {
 
   $("#navToggle a").click(function(event) {
@@ -28,4 +30,18 @@ $(document).ready(function() {
       $(".main-nav").css("display", "none");
     }
   });
+});
+
+// CODE BELOW IS FOR ACCORDION TABS
+
+$(".tab-content").hide();
+$(".tab-content:first").show();
+
+$(".tab").click(function() {
+  debugger;
+	$(".tab").removeClass("active");
+	$(this).addClass("active");
+	$(".tab-content").hide();
+	var activeTab = $(this).attr("rel");
+	$("#"+activeTab).fadeIn();
 });
