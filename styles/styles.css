@@ -174,8 +174,9 @@ img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   display: flex;
   flex-direction: column;
-  height: 65vh;
+  height: 70vh;
   margin: 5vh auto;
+  position: relative;
   width: 300px; }
 
 .content-card:hover {
@@ -193,15 +194,20 @@ img {
   display: inline-block;
   height: auto;
   margin: 0 auto;
-  max-width: 80%; }
+  max-width: 85%; }
 
 .content-card-text {
   font-size: 18px;
+  height: 33%;
   line-height: 1.2em;
-  margin: 10px auto;
-  padding: 2% 5%; }
+  margin: 1vh auto;
+  padding: 2% 5%;
+  width: 90%; }
 
 .content-card-link {
+  position: absolute;
+  bottom: 20px;
+  left: 75px;
   border: 2px solid #3778bf;
   color: #3778bf;
   font-size: 16px;
@@ -219,18 +225,81 @@ img {
     background-color: #3778bf;
     color: #d0e0f2; }
 
-@media screen and (min-width: 450px) {
-  .content-card {
-    height: 70vh; }
-
-  .content-card-link {
-    margin-top: 20px; } }
 @media screen and (min-width: 600px) {
   .content-card-container {
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    margin: 10px; }
 
   .content-card {
     max-width: 50vw; } }
+.tabs {
+  float: left;
+  list-style: none;
+  height: 100%;
+  border-left: 1px solid #999999;
+  width: 100%; }
+
+.tabs li {
+  float: left;
+  cursor: pointer;
+  padding: 0px 21px;
+  height: 31px;
+  line-height: 31px;
+  border: 1px solid #999999;
+  border-left: none;
+  font-weight: bold;
+  background: #3778bf;
+  overflow: hidden;
+  position: relative;
+  width: 33.3%; }
+  .tabs li:hover {
+    background: rgba(0, 0, 0, 0.15); }
+  @media screen and (min-width: 650px) {
+    .tabs li {
+      font-size: 20px;
+      height: 50px;
+      padding-top: 5px; } }
+
+.tabs li.active {
+  background: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF; }
+
+.tab-container {
+  display: block;
+  border: 1px solid #999999;
+  border-top: none;
+  clear: both;
+  float: left;
+  width: 100%;
+  background: #FFFFFF; }
+
+h4 {
+  font-size: 1.5em; }
+
+.tab-content {
+  padding: 20px;
+  font-size: 1.2em;
+  display: none; }
+
+.three .element {
+  display: block;
+  margin-bottom: 450px; }
+  @media screen and (min-width: 500px) {
+    .three .element {
+      margin-bottom: 400px; } }
+  @media screen and (min-width: 650px) {
+    .three .element {
+      margin: 0 auto;
+      margin-bottom: 350px;
+      width: 85%; } }
+  @media screen and (min-width: 900px) {
+    .three .element {
+      margin-bottom: 300px; } }
+
+.description {
+  display: block;
+  margin-top: 100px; }
+
 html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -243,7 +312,7 @@ body p {
   letter-spacing: 0.07em; }
 
 .page-header {
-  background-color: #333;
+  background-color: black;
   font-family: "Josefin Slab", serif;
   height: 20vh;
   letter-spacing: .1em; }
@@ -268,32 +337,40 @@ h1 {
     margin-left: 20px; }
 
 h2 {
-  color: #018bbd;
+  color: #3778bf;
   font-family: "Josefin Slab", serif;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: .05em;
   margin: 20px 0;
   text-align: center; }
 
 .week {
-  border: 2px solid #333;
-  margin-left: 5px;
-  margin-right: 5px;
+  min-height: 100vh;
+  margin: 40px 5px 0;
   padding: 5px; }
 
 h3 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center; }
 
 p {
-  font-size: 20px;
-  margin: 20px auto;
-  width: 90%; }
+  font-size: 24px;
+  margin: 20px auto; }
+
+.main-about,
+.description {
+  margin-top: 30px;
+  padding-top: 20px;
+  width: 80%; }
 
 .code a {
   color: black; }
+
+.site-footer {
+  background-color: black;
+  height: 100px; }
 
 @media screen and (min-width: 650px) {
   h1 {

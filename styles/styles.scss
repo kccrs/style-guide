@@ -2,6 +2,8 @@
 @import "_variables";
 @import "_reusable-header";
 @import "_content-card";
+@import "_accordion-tab";
+@import "_footer";
 
 html {
   -moz-box-sizing: border-box;
@@ -18,7 +20,7 @@ body p {
 }
 
 .page-header {
-  background-color: $page-header-color;
+  background-color: black;
   font-family: $header-font;
   height: 20vh;
   letter-spacing: .1em;
@@ -48,9 +50,9 @@ h1 {
 }
 
 h2 {
-  color: darken($page-nav-color, 10);
+  color: $content-card-primary;
   font-family: $header-font;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: .05em;
   margin: 20px 0;
@@ -58,27 +60,39 @@ h2 {
 }
 
 .week {
-  border: 2px solid $page-header-color;
-  margin-left: 5px;
-  margin-right: 5px;
+  // border: 2px solid $page-header-color;
+  min-height: 100vh;
+  margin: 40px 5px 0;
   padding: 5px;
 }
 
 h3 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 p {
-  font-size: 20px;
+  font-size: 24px;
   margin: 20px auto;
-  width: 90%;
+}
+
+.main-about,
+.description {
+  margin-top: 30px;
+  padding-top: 20px;
+  width: 80%;
 }
 
 .code a {
   color: black;
 }
+
+.site-footer {
+  background-color: black;
+  height: 100px;
+}
+
 
 @media screen and (min-width: 650px) {
 
