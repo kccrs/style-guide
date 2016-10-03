@@ -32,12 +32,26 @@ h1 {
   font-weight: bold;
   padding: 30px 0 0 20px;
   width: 60%;
+  @media #{$breakpoint-650} {
+    font-size: 48px;
+    padding-top: 40px;
+    width: 45%;
+  }
 }
 
 .page-nav {
   color: $page-nav-color;
   margin-top: 20px;
   width: 90%;
+  @media #{$breakpoint-650} {
+    float: right;
+    height: 60px;
+    margin-top: -25px;
+    width: 55%
+  }
+  @media #{$breakpoint-900} {
+    margin-top: -30px;
+  }
 }
 
 .page-nav li {
@@ -46,6 +60,14 @@ h1 {
   margin-left: 10px;
   &:first-child {
     margin-left: 20px;
+  }
+  @media #{$breakpoint-650} {
+    font-size: 26px;
+    margin-right: 5px;
+  }
+  @media #{$breakpoint-900} {
+    font-size: 30px;
+    width: 90px;
   }
 }
 
@@ -90,38 +112,4 @@ p {
 .site-footer {
   background-color: black;
   height: 100px;
-}
-
-
-@media screen and (min-width: 650px) {
-
-  h1 {
-    font-size: 48px;
-    padding-top: 40px;
-    width: 45%;
-  }
-
-  .page-nav {
-    float: right;
-    height: 60px;
-    margin-top: -25px;
-    width: 55%
-  }
-
-  .page-nav li {
-    font-size: 26px;
-    margin-right: 5px;
-  }
-}
-
-@media screen and (min-width: 900px) {
-
-  .page-nav {
-    margin-top: -30px;
-    width: 55%
-  }
-  .page-nav li {
-    font-size: 30px;
-    width: 90px;
-  }
 }

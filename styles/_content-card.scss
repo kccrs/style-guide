@@ -1,6 +1,10 @@
 .content-card-container {
   display: flex;
   flex-direction: column;
+  @media #{$breakpoint-600} {
+    flex-flow: row wrap;
+    margin: 10px;
+  }
 }
 
 .content-card {
@@ -13,9 +17,12 @@
   margin: 5vh auto;
   position: relative;
   width: 300px;
-}
-.content-card:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  @media #{$breakpoint-600} {
+    max-width: 50vw;
+  }
 }
 
 .content-card-title {
@@ -64,17 +71,5 @@
   &:hover {
     background-color: $content-card-primary;
     color: $content-card-button-hover;
-  }
-}
-
-@media screen and (min-width: 600px) {
-
-  .content-card-container {
-    flex-flow: row wrap;
-    margin: 10px;
-  }
-
-  .content-card {
-    max-width: 50vw;
   }
 }
