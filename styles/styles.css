@@ -147,7 +147,7 @@ table {
   .nav-title {
     padding-top: 0; }
 
-  img {
+  .cupcake {
     margin-top: 10%; }
 
   .main-nav {
@@ -159,7 +159,7 @@ table {
   .main-list-item a {
     font-size: 24px; } }
 @media all and (min-width: 950px) {
-  img {
+  .cupcake {
     margin-top: 8%; }
 
   .main-nav {
@@ -233,23 +233,23 @@ table {
   .content-card {
     max-width: 50vw; } }
 .tabs {
-  float: left;
-  list-style: none;
-  height: 100%;
   border-left: 1px solid #999999;
+  float: left;
+  height: 100%;
+  list-style: none;
   width: 100%; }
 
 .tabs li {
-  float: left;
+  background: #3778bf;
+  border-left: none;
+  border: 1px solid #999999;
   cursor: pointer;
-  padding: 0px 21px;
+  float: left;
+  font-weight: bold;
   height: 31px;
   line-height: 31px;
-  border: 1px solid #999999;
-  border-left: none;
-  font-weight: bold;
-  background: #3778bf;
   overflow: hidden;
+  padding: 0px 21px;
   position: relative;
   width: 33.3%; }
   .tabs li:hover {
@@ -265,21 +265,21 @@ table {
   border-bottom: 1px solid #FFFFFF; }
 
 .tab-container {
-  display: block;
-  border: 1px solid #999999;
+  background: #FFFFFF;
   border-top: none;
+  border: 1px solid #999999;
   clear: both;
+  display: block;
   float: left;
-  width: 100%;
-  background: #FFFFFF; }
+  width: 100%; }
 
 h4 {
   font-size: 1.5em; }
 
 .tab-content {
-  padding: 20px;
+  display: none;
   font-size: 1.2em;
-  display: none; }
+  padding: 20px; }
 
 .three .element {
   display: block;
@@ -300,9 +300,6 @@ h4 {
   display: block;
   margin-top: 100px; }
 
-.reusable-footer {
-  width: 100%; }
-
 .footer-lists {
   margin-top: 20px;
   display: flex;
@@ -315,6 +312,9 @@ h4 {
   line-height: 1.5em;
   list-style: none;
   text-align: center; }
+  @media screen and (min-width: 900px) {
+    .footer-lists li {
+      font-size: 18px; } }
 
 .reusable-footer {
   background: black;
@@ -328,6 +328,9 @@ h5 {
   font-size: 18px;
   font-weight: bold;
   color: #3778bf; }
+  @media screen and (min-width: 900px) {
+    h5 {
+      font-size: 22px; } }
 
 .social-media-logo {
   display: inline-block;
@@ -336,7 +339,7 @@ h5 {
   max-width: 28px; }
 
 .social-media-logo:first-child {
-  margin-right: 5px; }
+  margin-left: 10px; }
 
 html {
   -moz-box-sizing: border-box;

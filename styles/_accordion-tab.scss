@@ -1,22 +1,22 @@
 .tabs {
-	float: left;
-	list-style: none;
-	height: 100%;
 	border-left: 1px solid #999999;
+	float: left;
+	height: 100%;
+	list-style: none;
 	width: 100%;
 }
 
 .tabs li {
-	float: left;
+	background: $content-card-primary;
+	border-left: none;
+	border: 1px solid #999999;
 	cursor: pointer;
-	padding: 0px 21px ;
+	float: left;
+	font-weight: bold;
 	height: 31px;
 	line-height: 31px;
-	border: 1px solid #999999;
-	border-left: none;
-	font-weight: bold;
-	background: $content-card-primary;
 	overflow: hidden;
+	padding: 0px 21px ;
 	position: relative;
   width: 33.3%;
   &:hover {
@@ -35,13 +35,13 @@
 }
 
 .tab-container {
-  display: block;
-	border: 1px solid #999999;
+	background: #FFFFFF;
 	border-top: none;
+	border: 1px solid #999999;
 	clear: both;
+  display: block;
 	float: left;
 	width: 100%;
-	background: #FFFFFF;
 }
 
 h4 {
@@ -49,9 +49,9 @@ h4 {
 }
 
 .tab-content {
-	padding: 20px;
-	font-size: 1.2em;
 	display: none;
+	font-size: 1.2em;
+	padding: 20px;
 }
 
 .three .element {
