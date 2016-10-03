@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-img {
+.cupcake {
   float: left;
   margin-bottom: 25px;
   max-width: 70px;
@@ -126,7 +126,7 @@ img {
     padding-top: 0;
   }
 
-  img {
+  .cupcake {
     margin-top: 10%;
   }
 
@@ -145,7 +145,7 @@ img {
 
 @media all and (min-width: 950px) {
 
-  img {
+  .cupcake {
     margin-top: 8%;
   }
 
