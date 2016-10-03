@@ -241,6 +241,7 @@ img {
 
 .tabs li {
   float: left;
+  cursor: pointer;
   padding: 0px 21px;
   height: 31px;
   line-height: 31px;
@@ -253,6 +254,11 @@ img {
   width: 33.3%; }
   .tabs li:hover {
     background: rgba(0, 0, 0, 0.15); }
+  @media screen and (min-width: 650px) {
+    .tabs li {
+      font-size: 20px;
+      height: 50px;
+      padding-top: 5px; } }
 
 .tabs li.active {
   background: #FFFFFF;
@@ -281,6 +287,14 @@ h4 {
   @media screen and (min-width: 500px) {
     .three .element {
       margin-bottom: 400px; } }
+  @media screen and (min-width: 650px) {
+    .three .element {
+      margin: 0 auto;
+      margin-bottom: 350px;
+      width: 85%; } }
+  @media screen and (min-width: 900px) {
+    .three .element {
+      margin-bottom: 300px; } }
 
 .description {
   display: block;
