@@ -1,48 +1,67 @@
 .tabs {
-		margin: 0;
-		padding: 0;
-		float: left;
-		list-style: none;
-		height: 32px;
-		border-bottom: 1px solid #999999;
-		border-left: 1px solid #999999;
-		width: 100%;
-	}
+  // display: inline-block;
+	float: left;
+	list-style: none;
+	height: 100%;
+  // border-bottom: 1px solid #999999;
+	border-left: 1px solid #999999;
+	width: 100%;
+}
 
-	.tabs li {
-		float: left;
-		margin: 0;
-		cursor: pointer;
-		padding: 0px 21px ;
-		height: 31px;
-		line-height: 31px;
-		border: 1px solid #999999;
-		border-left: none;
-		font-weight: bold;
-		background: #EEEEEE;
-		overflow: hidden;
-		position: relative;
-    &:hover {
-      background: #CCCCCC;
-    }
-	}
+.tabs li {
+	float: left;
+	// margin: 0;
+	// cursor: pointer;
+	padding: 0px 21px ;
+	height: 31px;
+	line-height: 31px;
+	border: 1px solid #999999;
 
-  .tabs li.active {
-    background: #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
+	border-left: none;
+	font-weight: bold;
+	background: $content-card-primary;
+	overflow: hidden;
+	position: relative;
+  width: 33.3%;
+  &:hover {
+    background: $nav-border;
   }
-  
-	.tab-container {
-		border: 1px solid #999999;
-		border-top: none;
-		clear: both;
-		float: left;
-		width: 100%;
-		background: #FFFFFF;
-	}
+}
 
-	.tab-content {
-		padding: 20px;
-		font-size: 1.2em;
-		display: none;
-	}
+.tabs li.active {
+  background: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.tab-container {
+  display: block;
+	border: 1px solid #999999;
+	border-top: none;
+	clear: both;
+	float: left;
+	width: 100%;
+	background: #FFFFFF;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+.tab-content {
+	padding: 20px;
+	font-size: 1.2em;
+	display: none;
+}
+
+.three .element {
+  display: block;
+  margin-bottom: 450px;
+  @media #{$breakpoint-500} {
+    margin-bottom: 400px;
+  }
+}
+
+.description {
+  display: block;
+  margin-top: 100px;
+}

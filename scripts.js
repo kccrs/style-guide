@@ -39,7 +39,6 @@ $(".tab-content").hide();
 $(".tab-content:first").show();
 
 $(".tabs li").click(function() {
-  // debugger;
 	$(".tabs li").removeClass("active");
 	$(this).addClass("active");
 	$(".tab-content").hide();
