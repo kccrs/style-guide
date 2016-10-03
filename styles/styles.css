@@ -53,7 +53,7 @@ table {
   flex-direction: column;
   text-align: center; }
 
-img {
+.cupcake {
   float: left;
   margin-bottom: 25px;
   max-width: 70px; }
@@ -299,6 +299,44 @@ h4 {
 .description {
   display: block;
   margin-top: 100px; }
+
+.reusable-footer {
+  width: 100%; }
+
+.footer-lists {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around; }
+
+.footer-lists ul {
+  flex-basis: 10em; }
+
+.footer-lists li {
+  line-height: 1.5em;
+  list-style: none;
+  text-align: center; }
+
+.reusable-footer {
+  background: black;
+  border-top: 2px solid #d0e0f2;
+  color: #d0e0f2;
+  height: 150px;
+  margin-top: 10px;
+  text-align: center; }
+
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3778bf; }
+
+.social-media-logo {
+  display: inline-block;
+  float: left;
+  margin: 10px auto;
+  max-width: 28px; }
+
+.social-media-logo:first-child {
+  margin-right: 5px; }
 
 html {
   -moz-box-sizing: border-box;
